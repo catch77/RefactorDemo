@@ -88,4 +88,28 @@ public class GildedRoseTest {
         assertEquals(-10, items[0].sellIn);
         assertEquals(47, items[0].quality);
     }
+
+    @Test
+    public void should_return_true_given_item_name_Conjured_and_sellIn_is_negative_9_and_quality_is_45() {
+        Item item = new Item("Conjured", -9, 45);
+        Item[] items = new Item[1];
+        items[0] = item;
+        GildedRose gildedRose = new GildedRose(items);
+        gildedRose.updateQualityTwo();
+        System.out.println(items[0]);
+        assertEquals(-10, items[0].sellIn);
+        assertEquals(41, items[0].quality);
+    }
+
+    @Test
+    public void should_return_true_given_item_name_Conjured_and_sellIn_is_10_and_quality_is_5() {
+        Item item = new Item("Conjured", 10, 5);
+        Item[] items = new Item[1];
+        items[0] = item;
+        GildedRose gildedRose = new GildedRose(items);
+        gildedRose.updateQualityTwo();
+        System.out.println(items[0]);
+        assertEquals(9, items[0].sellIn);
+        assertEquals(3, items[0].quality);
+    }
 }
