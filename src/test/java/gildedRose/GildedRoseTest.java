@@ -13,7 +13,7 @@ public class GildedRoseTest {
         Item[] items = new Item[1];
         items[0] = item;
         GildedRose gildedRose = new GildedRose(items);
-        gildedRose.updateQuality();
+        gildedRose.updateQualityTwo();
         assertEquals(9, items[0].sellIn);
         assertEquals(4, items[0].quality);
     }
@@ -24,7 +24,7 @@ public class GildedRoseTest {
         Item[] items = new Item[1];
         items[0] = item;
         GildedRose gildedRose = new GildedRose(items);
-        gildedRose.updateQuality();
+        gildedRose.updateQualityTwo();
         assertEquals(9, items[0].sellIn);
         assertEquals(6, items[0].quality);
     }
@@ -35,7 +35,7 @@ public class GildedRoseTest {
         Item[] items = new Item[1];
         items[0] = item;
         GildedRose gildedRose = new GildedRose(items);
-        gildedRose.updateQuality();
+        gildedRose.updateQualityTwo();
         System.out.println(items[0]);
         assertEquals(9, items[0].sellIn);
         assertEquals(47, items[0].quality);
@@ -47,7 +47,7 @@ public class GildedRoseTest {
         Item[] items = new Item[1];
         items[0] = item;
         GildedRose gildedRose = new GildedRose(items);
-        gildedRose.updateQuality();
+        gildedRose.updateQualityTwo();
         System.out.println(items[0]);
         assertEquals(4, items[0].sellIn);
         assertEquals(48, items[0].quality);
@@ -59,7 +59,7 @@ public class GildedRoseTest {
         Item[] items = new Item[1];
         items[0] = item;
         GildedRose gildedRose = new GildedRose(items);
-        gildedRose.updateQuality();
+        gildedRose.updateQualityTwo();
         System.out.println(items[0]);
         assertEquals(-10, items[0].sellIn);
         assertEquals(0, items[0].quality);
@@ -71,7 +71,7 @@ public class GildedRoseTest {
         Item[] items = new Item[1];
         items[0] = item;
         GildedRose gildedRose = new GildedRose(items);
-        gildedRose.updateQuality();
+        gildedRose.updateQualityTwo();
         System.out.println(items[0]);
         assertEquals(-10, items[0].sellIn);
         assertEquals(43, items[0].quality);
@@ -83,7 +83,7 @@ public class GildedRoseTest {
         Item[] items = new Item[1];
         items[0] = item;
         GildedRose gildedRose = new GildedRose(items);
-        gildedRose.updateQuality();
+        gildedRose.updateQualityTwo();
         System.out.println(items[0]);
         assertEquals(-10, items[0].sellIn);
         assertEquals(47, items[0].quality);
